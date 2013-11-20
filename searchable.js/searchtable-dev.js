@@ -8,18 +8,18 @@
     
 	//searchtable plugin.
 	//Parameter o: options object.
-    //          o.class: style class for input field. Not required.
-    //          o.text: text appearing as hint in text box. Only supported by modern browsers. Not required
+        //          o.className: style class for input field. Not required.
+        //          o.text: text appearing as hint in text box. Only supported by modern browsers. Not required
 	$.fn.searchtable = function(o)
 	{
-		o=$.merge({},o);
+		o=$.extend({},o);
 		this.each(function()
 		{
 			var table = $(this);
 			var allRows = table.find('tr');
 			var txt = $('<input type="text">');
-			if(typeof o.class === 'string')
-				txt.addClass(o.class);
+			if(typeof o.className === 'string')
+				txt.addClass(o.className);
 			if(typeof o.text === 'string')
 				txt.attr('placeholder',o.text);
 			txt.keyup(function()
