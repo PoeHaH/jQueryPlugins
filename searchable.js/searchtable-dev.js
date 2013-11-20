@@ -12,6 +12,7 @@
     //          o.text: text appearing as hint in text box. Only supported by modern browsers. Not required
 	$.fn.searchtable = function(o)
 	{
+		o=$.merge({},o);
 		this.each(function()
 		{
 			var table = $(this);
