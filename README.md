@@ -12,4 +12,4 @@ What it does contain is the ability to auto-update slide content:
 If you populate the slides with ajax, this plug in will always pick
 the newest slides (in other words: slides aren't cached and are refreshed each iteration)
 
-THis is especially handy if you want to make a TV narowcasting slider.
+This is especially handy if you want to use it as a TV narowcasting slider.
