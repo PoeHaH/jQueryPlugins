@@ -8,7 +8,7 @@ $.fn.fader = function(o)
         var state={currentPos:-1,total:slides.length,active:null}
 		var run = function()
 		{
-			if(state.total>1 || active==null)
+			if(state.total>1 || state.active==null)
 			{
 				setNext();
 				if(state.active!=null)state.active.fadeOut(o.animSpeed);
